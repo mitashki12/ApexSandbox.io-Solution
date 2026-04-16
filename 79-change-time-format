@@ -2,8 +2,8 @@ public String changeTimeFormat(String strTime) {
     //code here
     List<String> splitedTime = strTime.split(':');
     String amOrPm;
-    Integer hour = String.valueOf(splitedTime[0]);
-    Integer minute = String.valueOf(splitedTime[1]);
+    Integer hour = Integer.valueOf(splitedTime[0]);
+    Integer minute = Integer.valueOf(splitedTime[1]);
     if( hour>=0 && hour<12 ){
         amOrPm = 'AM';
     }else{
