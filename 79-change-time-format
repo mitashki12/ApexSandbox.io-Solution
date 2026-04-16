@@ -11,7 +11,7 @@ public String changeTimeFormat(String strTime) {
         hourAsString = ''+hour;
     }else if( hour>0 && hour<12 ){
         amOrPm = 'AM';
-        hourAsString = '0'+hour;
+        hourAsString = hour<10 ? '0'+ hour : '' + hour;
     }else if(hour==12) {
         amOrPm = 'PM';
         hourAsString = ''+hour;
