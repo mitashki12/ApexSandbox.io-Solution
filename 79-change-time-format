@@ -1,15 +1,24 @@
 public String changeTimeFormat(String strTime) {
     //code here
     List<String> splitedTime = strTime.split(':');
-    String amOrPm;
+    String amOrPm, hourAsString, minuteAsString;
     Integer hour = Integer.valueOf(splitedTime[0]);
     Integer minute = Integer.valueOf(splitedTime[1]);
+
     if( hour>=0 && hour<12 ){
         amOrPm = 'AM';
+        hourAsString = ''+hour;
     }else{
         amOrPm = 'PM';
         hour = hour-12;
+        hourAsString = '0'+hour;
     }
-    String formattedTime = String.format('{0, number, 00}:{1, number, 00} {3}',hour,minute,amOrPm);
-    return  formattedTime;  
+
+    if(minute<10){
+        minuteAsString = '0'+minute;
+    } else {
+        minuteAsString = ''+minute;
+    }
+
+    return  hourAsString + ':' + minuteAsString + ' ' + amOrPm;  
 }
