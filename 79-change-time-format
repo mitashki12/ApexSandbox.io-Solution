@@ -10,5 +10,5 @@ public String changeTimeFormat(String strTime) {
         amOrPm = 'PM';
         hour = hour-12;
     }
-    return  hour + ':' + 'minute' + amOrPm;  
+    return  hour + ':' + minute +' '+ amOrPm;  
 }
