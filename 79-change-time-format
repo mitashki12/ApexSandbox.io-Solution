@@ -10,5 +10,6 @@ public String changeTimeFormat(String strTime) {
         amOrPm = 'PM';
         hour = hour-12;
     }
-    return  hour + ':' + minute +' '+ amOrPm;  
+    String formattedTime = String.format('{0, number, 00}:{1, number, 00} {3}',hour,minute,amOrPm);
+    return  formattedTime;  
 }
