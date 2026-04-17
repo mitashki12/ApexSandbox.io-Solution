@@ -1,0 +1,15 @@
+public String reverseWordsInASentence(String sentence){
+    //your flawless code here
+    List<String> splitedWords = sentence.split(' ');
+    String revertedSentence = '';
+    for(Integer wordIndex = 0;wordIndex < splitedWords.size(); wordIndex++){
+        
+        if(wordIndex<splitedWords.size()-1){
+            revertedSentence = revertedSentence + splitedWords[wordIndex]+' ';    
+        }else{
+            revertedSentence = revertedSentence + splitedWords[wordIndex];
+        }
+    }
+
+    return revertedSentence;
+}
