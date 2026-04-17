@@ -4,7 +4,7 @@ public Integer nextPrime(Integer num) {
     Boolean primeNumberFound=false, isDevisable=false;
     while(!primeNumberFound){
         isDevisable=false;
-        for(Integer devisor = 2; devisor<currentNumber;devisor++){
+        for(Integer devisor = 2; devisor<Math.abs(currentNumber);devisor++){
             if(Math.mod(currentNumber,devisor)==0){
                 isDevisable=true;
                 break;
