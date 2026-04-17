@@ -2,9 +2,12 @@ public Integer nextPrime(Integer num) {
     //code here
     Integer currentNumber=num+1;
     Boolean primeNumberFound=false, isDevisable=false;
+    if(num<1){
+        return 1;
+    }
     while(!primeNumberFound){
         isDevisable=false;
-        for(Integer devisor = 2; devisor<Math.abs(currentNumber);devisor++){
+        for(Integer devisor = 2; devisor<currentNumber;devisor++){
             if(Math.mod(currentNumber,devisor)==0){
                 isDevisable=true;
                 break;
