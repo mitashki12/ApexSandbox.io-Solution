@@ -11,7 +11,7 @@ public Integer nextPrime(Integer num) {
             }
         }
         if(isDevisable==true){
-            currentNumber++1;
+            currentNumber++;
         }else{
             primeNumberFound = true;
         }
