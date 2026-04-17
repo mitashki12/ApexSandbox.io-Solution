@@ -1,0 +1,20 @@
+public Integer nextPrime(Integer num) {
+    //code here
+    Integer currentNumber=num+1;
+    Boolean primeNumberFound=false, isDevisable=false;
+    while(!primeNumberFound){
+        isDevisable=false;
+        for(Integer devisor = 2; devisor<currentNumber;devisor++){
+            if(Math.mod(currentNumber,devisor)==0){
+                isDevisable=true;
+                break;
+            }
+        }
+        if(isDevisable==true){
+            currentNumber++1;
+        }else{
+            primeNumberFound = true;
+        }
+    }
+    return currentNumber;
+}
