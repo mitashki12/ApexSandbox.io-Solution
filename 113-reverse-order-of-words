@@ -2,7 +2,7 @@ public String reverseWordsInASentence(String sentence){
     //your flawless code here
     List<String> splitedWords = sentence.split(' ');
     String revertedSentence = '';
-    for(Integer wordIndex = 0;wordIndex < splitedWords.size(); wordIndex++){
+    for(Integer wordIndex = 0;wordIndex < splitedWords.size(); wordIndex+=1){
         
         if(wordIndex==splitedWords.size()-1){
             revertedSentence = revertedSentence + splitedWords[wordIndex];    
