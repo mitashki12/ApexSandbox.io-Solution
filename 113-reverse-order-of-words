@@ -1,7 +1,9 @@
 public String reverseWordsInASentence(String sentence){
     //your flawless code here
-    if(String.IsBlank(sentence)){
+    if(sentence==null){
         return null;
+    }else if(sentence==''){
+        return '';
     }
     List<String> splitedWords = sentence.split(' ');
     String revertedSentence = '';
