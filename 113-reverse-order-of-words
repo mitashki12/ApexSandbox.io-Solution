@@ -4,10 +4,10 @@ public String reverseWordsInASentence(String sentence){
     String revertedSentence = '';
     for(Integer wordIndex = 0;wordIndex < splitedWords.size(); wordIndex++){
         
-        if(wordIndex<splitedWords.size()-1){
-            revertedSentence = revertedSentence + splitedWords[wordIndex]+' ';    
+        if(wordIndex==splitedWords.size()-1){
+            revertedSentence = revertedSentence + splitedWords[wordIndex];    
         }else{
-            revertedSentence = revertedSentence + splitedWords[wordIndex];
+            revertedSentence = revertedSentence + splitedWords[wordIndex] + ' ';
         }
     }
 
