@@ -3,7 +3,7 @@ public Integer nextPrime(Integer num) {
     Integer currentNumber=num+1;
     Boolean primeNumberFound=false, isDevisable=false;
     if(num<1){
-        return 1;
+        return 2;
     }
     while(!primeNumberFound){
         isDevisable=false;
