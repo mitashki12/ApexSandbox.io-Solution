@@ -8,5 +8,6 @@ public String registerStudent(String name, String phone, String email) {
     );
 
     upsert student;
+    student = [SELECT Id, apxio__Registration_Number__c FROM apxio__Student__c WHERE Name = name];
     return student.apxio__Registration_Number__c;
 }
