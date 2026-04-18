@@ -1,8 +1,5 @@
 public String registerStudent(String name, String phone, String email) {
     // code here
-    if(credits>4||credits<1){
-        return null;
-    }
 
     apxio__Student__c student = new apxio__Student__c(
         Name = name,
