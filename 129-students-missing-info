@@ -8,5 +8,8 @@ public List<apxio__Student__c> selectStudentsWithoutContactInfo() {
         WHERE
             apxio__Active__c = true AND
             ( apxio__Email__c = NULL OR apxio__Phone__c = NULL)
+        ORDER BY NAME ASC
     ];
+
+    return quriedStudents;
 }
