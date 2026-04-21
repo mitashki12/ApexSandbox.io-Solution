@@ -1,6 +1,8 @@
 public Boolean duplicateContacts(Contact c1, Contact c2) {
     //code here
-    if(c1.Email==c2.Email || c1.Phone==c2.Phone){
+    if( ( String.IsNotBlank(c1.Email) && String.IsNotBlank(c2.Email2)  &&
+        ( c1.Email == c2.Email ) ) || ( String.IsNotBlank(c1.Phone) && String.IsNotBlank(c2.Phone) &&
+         c1.Phone==c2.Phone)){
         return true;
     }else{
         return false;
