@@ -1,6 +1,6 @@
 public List<Account> getAccountsFromJSONString(String inputJSON){
     // code here
-    if(inputJSON.IsBlank()){
+    if(String.IsBlank(inputJSON)){
         return null;
     }
     return (List<Account>) JSON.deserialize(inputJSON, Account.class);
