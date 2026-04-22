@@ -1,21 +1,21 @@
 public Boolean isKeyAccount(Account a) {
     //code here
     switch on a.Industry {
-        when 'Banking': {
+        when 'Banking' {
             if(a.AnnualRevenue>=600000){
                 return true;
             }else{
                 return false;
             }
         }
-        when 'Technology': {
+        when 'Technology' {
             if(a.AnnualRevenue>=800000){
                 return true;
             }else{
                 return false;
             }
         }
-        when 'Retail': {
+        when 'Retail' {
             if(a.AnnualRevenue>=2000000){
                 return true;
             }else{
