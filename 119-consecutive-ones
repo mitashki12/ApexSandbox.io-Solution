@@ -1,0 +1,17 @@
+public Integer maxConsecutiveOnes(Integer[] numbers) {
+    //code here
+    Integer maximumConsecutiveOnes = 0;
+    Integer currentConsecutiveOnes=0;
+    for(Integer i = 0; i < numbers.size(); i++){
+        if(numbers[i]==1){
+            currentConsecutiveOnes++;
+            if(currentConsecutiveOnes>maximumConsecutiveOnes){
+                maximumConsecutiveOnes = currentConsecutiveOnes;
+            }
+        }else{
+            currentConsecutiveOnes=0;
+        }
+    }
+
+    return maximumConsecutiveOnes;
+}
