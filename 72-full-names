@@ -1,0 +1,18 @@
+public List<String> fullNames(List<String> firstNames, List<String> lastNames) {
+    //code here
+    List<String> fullNames = new List<String>();
+
+    if(firstNames==null||lastNames==null){
+        return null;
+    } 
+
+    if(firstNames.IsEmpty()||lastNames.IsEmpty()){
+        return fullNames;
+    }
+
+    for(Integer i = 0;i < firstNames.size(); i++){
+        fullNames.add(firstNames[i] + ' ' + lastNames[i]);
+    }
+
+    return fullNames;
+}
