@@ -12,7 +12,7 @@ public Integer secondLargest(List<Integer> numbers) {
             secondLargestNumber = numbers[j+1];
             continue;
         }
-        if(numbers[j]>secondLargestNumber&&numbers[j]){
+        if(numbers[j]>secondLargestNumber){
             secondLargestNumber=numbers[j];
         }
     }
