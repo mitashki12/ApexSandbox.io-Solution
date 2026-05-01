@@ -1,6 +1,6 @@
 public boolean isSorted(List<Integer> numbers) {
     //code here
-    if(numbers.size()<=3){
+    if(numbers.size()<3){
         return true;
     }
 
