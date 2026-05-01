@@ -1,12 +1,14 @@
 public Integer secondLargest(List<Integer> numbers) {
     //code here
     Integer currentLargestNumber = numbers[0];
-    Integer secondLargestNumber;
+    Integer secondLargestNumber = numbers[0];
     for(Integer i=1;i<numbers.size();i++){
-        if(numbers[i]>currentLargestNumber){
+        if(numbers[i] > currentLargestNumber){
             secondLargestNumber = currentLargestNumber;
             currentLargestNumber=numbers[i];
             
+        }else if(numbers[i] > secondLargestNumber && numbers[i]!=currentLargestNumber){
+            secondLargestNumber = numbers[i];
         }
     }
     return secondLargestNumber;
