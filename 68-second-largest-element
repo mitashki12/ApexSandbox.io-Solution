@@ -8,10 +8,11 @@ public Integer secondLargest(List<Integer> numbers) {
         }
     }
     for(Integer j=1;j<numbers.size();j++){
-        if(numbers[j] == currentLargestNumber){
+        if(numbers[j]==currentLargestNumber){
+            secondLargestNumber = numbers[j+1];
             continue;
         }
-        if(numbers[j]>secondLargestNumber&&numbers[j]==currentLargestNumber){
+        if(numbers[j]>secondLargestNumber&&numbers[j]){
             secondLargestNumber=numbers[j];
         }
     }
