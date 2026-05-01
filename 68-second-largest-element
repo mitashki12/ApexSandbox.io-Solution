@@ -7,7 +7,7 @@ public Integer secondLargest(List<Integer> numbers) {
             currentLargestNumber=numbers[i];
         }
     }
-    for(Integer j=1;j<numbers.size();j++){
+    for(Integer j=0;j<numbers.size();j++){
         if(numbers[j]==currentLargestNumber){
             secondLargestNumber = numbers[j+1];
             continue;
