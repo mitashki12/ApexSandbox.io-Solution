@@ -1,0 +1,19 @@
+public Integer secondLargest(List<Integer> numbers) {
+    //code here
+    Integer currentLargestNumberIndex = 0;
+    Integer secondLargestNumberIndex = 0;
+    for(Integer i=1;i<numbers.size();i++){
+        if(numbers[i]>numbers[currentLargestNumberIndex]){
+            currentLargestNumberIndex=i;
+        }
+    }
+    for(Integer i=1;i<numbers.size();i++){
+        if(i==currentLargestNumberIndex){
+            continue;
+        }
+        if(numbers[i]>numbers[secondLargestNumberIndex]){
+            secondLargestNumberIndex=i;
+        }
+    }
+    return numbers[secondLargestNumberIndex];
+}
