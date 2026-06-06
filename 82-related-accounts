@@ -3,7 +3,9 @@ public Set<Id> accountIds(List<Opportunity> opps) {
     Set<Id> resultSet = new Set<Id>();
     if(!opps.isEmpty()){
         for(Opportunity currentOpp: opps){
-            resultSet.add(currentOpp.AccountId);
+            if(currentOpp.AccountId!=null){
+                resultSet.add(currentOpp.AccountId);
+            }
         }
     }
     return resultSet;
