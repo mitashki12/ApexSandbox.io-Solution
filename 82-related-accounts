@@ -1,6 +1,6 @@
 public Set<Id> accountIds(List<Opportunity> opps) {
     //code here
-    Set<Integer> resultSet = new Set<Integer>();
+    Set<Id> resultSet = new Set<Id>();
     if(!opps.isEmpty()){
         for(Opportunity currentOpp: opps){
             resultSet.add(currentOpp.AccountId);
