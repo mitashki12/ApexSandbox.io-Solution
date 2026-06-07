@@ -1,0 +1,8 @@
+public String employeeEmail(Map<String, String> employeeIdToEmail, String employeeId) {
+    //code here
+    String employeeEmail = employeeIdToEmail?.get(employeeId);
+    if(employeeEmail==null){
+        employeeEmail = 'info@apexsandbox.io'
+    }
+    return employeeEmail;
+}
